@@ -1,0 +1,65 @@
+{
+  "slug": "iit-bhu-varanasi",
+  "officialName": "Indian Institute of Technology (BHU) Varanasi",
+  "aliases": ["IIT (BHU)", "IIT BHU", "IIT Varanasi"],
+  "city": "Varanasi",
+  "institutionType": "InstituteOfNationalImportance",
+  "website": "https://www.iitbhu.ac.in/",
+  "websiteVerified": true,
+  "foundedYear": 1919,
+  "foundedSourceUrl": "https://www.indiascienceandtechnology.gov.in/organisations/centres-of-higher-learning/iits/indian-institute-technology-banaras-hindu-university-varanasi",
+  "about": "Indian Institute of Technology (BHU) Varanasi is a public engineering institution in Varanasi, Uttar Pradesh, founded in 1919 as the Banaras Engineering College, becoming the Institute of Technology, Banaras Hindu University in 1968 and designated an Indian Institute of Technology in 2012. Per the government's India Science, Technology and Innovation portal, it has 14 departments and three inter-disciplinary schools. It offers four-year B.Tech programmes and five-year Integrated Dual Degree (IDD) programmes combining B.Tech and M.Tech, with admission to all programmes through JEE, while M.Tech and Ph.D. admissions are made via GATE. The Institute is ranked 10th in NIRF Engineering (2025).",
+  "accreditation": {
+    "naacGrade": null,
+    "nba": false,
+    "other": "NIRF 2025: Rank 10 in Engineering, Rank 22 in Research, Rank 31 in Overall. QS World University Rankings 2026: global rank 566, national rank 14",
+    "sourceUrl": "https://www.iitbhu.ac.in/nirf"
+  },
+  "courses": [
+    {
+      "name": "B.Tech. / B.Pharm. / B.Arch.",
+      "duration": "4 years (5 years for B.Arch.)",
+      "fee": 106350,
+      "feeBasis": "Per Semester",
+      "feeSourceUrl": "https://www.iitbhu.ac.in/sites/default/files/institute/academics/fresher/doc/fee_structure_2025-26.pdf",
+      "isVerified": true,
+      "note": "Semester fee total Rs. 1,06,350 including Tuition Fee of Rs. 1,00,000 per semester (2025-26 official fee structure). SC/ST and PwD exempted from Tuition Fee and Hostel Seat Rent; partial concession for family income under Rs. 5 lakh."
+    },
+    {
+      "name": "Integrated Dual Degree (IDD) / Integrated M.Tech.",
+      "duration": "5 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Offered per official fee structure ('Integrated Dual Degree(IDD)'); fee details not separately extracted in this research."
+    },
+    {
+      "name": "M.Tech. / M.Pharm. / M.Sc. / Ph.D.",
+      "duration": "2 years (M.Tech/M.Pharm/M.Sc), Ph.D. variable",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Postgraduate and doctoral programmes offered per the Institute's official DOAA Fee Structure page and ISTI portal; specific PG fee figures not extracted in this research."
+    }
+  ],
+  "placements": [
+    {
+      "batch": 2025,
+      "averagePackage": 24.56,
+      "highestPackage": 220,
+      "lowestPackage": null,
+      "medianPackage": null,
+      "placementPercent": null,
+      "isVerified": true,
+      "sourceName": "Official Annual Report 2024-25, IIT (BHU) Varanasi",
+      "sourceUrl": "https://www.iitbhu.ac.in/contents/institute/dean/doaa/doc/annual_report_english_2024-25.pdf",
+      "note": "2024-25 academic session: 398 companies visited, 1,405 offers (incl. 4 international), average CTC Rs. 24.56 LPA, highest package Rs. 2.20 crore (220 LPA), 502 paid internships."
+    }
+  ],
+  "rating": null,
+  "ratingSource": null,
+  "identityNotes": "Formerly the Institute of Technology, Banaras Hindu University (from 1968); granted IIT status in 2012. Shares the BHU campus. Also ranked in QS World University Rankings 2026 (rank 566).",
+  "researchNotes": "NIRF median-salary statistics widely cited by aggregators were NOT used here; only the Institute's own official Annual Report 2024-25 placement figures (average 24.56 LPA, highest Rs. 2.20 crore) were recorded. Fee figure verified from the official 2025-26 fee structure PDF. PlacementPercent and median/lowest packages not published in that report, so left null."
+}

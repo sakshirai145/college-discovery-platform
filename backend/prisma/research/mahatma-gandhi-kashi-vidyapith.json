@@ -1,0 +1,52 @@
+{
+  "slug": "mahatma-gandhi-kashi-vidyapith",
+  "officialName": "Mahatma Gandhi Kashi Vidyapith",
+  "aliases": ["MGKVP", "Kashi Vidyapith", "Mahatma Gandhi Kashi Vidyapeeth"],
+  "city": "Varanasi",
+  "institutionType": "StateUniversity",
+  "website": "https://mgkvp.ac.in/",
+  "websiteVerified": true,
+  "foundedYear": 1921,
+  "foundedSourceUrl": "https://mgkvp.ac.in/",
+  "about": "Mahatma Gandhi Kashi Vidyapith is a state university located in Varanasi, Uttar Pradesh, established on 10 February 1921 as Kashi Vidyapith and later renamed in honour of Mahatma Gandhi. According to its official website it is a public university administered under the state legislature of the government of Uttar Pradesh, with more than 350 affiliated colleges spread over five districts (Varanasi, Chandauli, Bhadohi, Mirzapur, Sonbhadra). It is described as one of the largest state universities in Uttar Pradesh. The university's official site lists faculties including Agriculture, Commerce & Management Studies, Education, Humanities, Law, Medical Sciences, Social Sciences, Social Work, and Science & Technology, and admits students through its Samarth-based admission portal for undergraduate, postgraduate, diploma and professional programmes.",
+  "accreditation": {
+    "naacGrade": null,
+    "nba": false,
+    "other": "NAAC accredited; operated as a State University recognized by UGC",
+    "sourceUrl": "https://mgkvp.ac.in/"
+  },
+  "courses": [
+    {
+      "name": "Undergraduate programmes (BA, B.Sc, B.Com, BBA)",
+      "duration": "3 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Undergraduate programmes offered across faculties per the official admission portal (mgkvpadmission.samarth.edu.in); fee not individually published on a page verified in this research."
+    },
+    {
+      "name": "Postgraduate programmes (MA, M.Sc and others)",
+      "duration": "2 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "PG programmes offered per the official admission portal; fee not individually published on a page verified in this research."
+    },
+    {
+      "name": "Diploma and professional programmes",
+      "duration": "1-3 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Includes Diploma in Karmakand, M.Sc, M.A. Journalism and Mass Communication, etc. per official campus admission notices."
+    }
+  ],
+  "placements": [],
+  "rating": null,
+  "ratingSource": null,
+  "identityNotes": "Originally named Kashi Vidyapith, renamed Mahatma Gandhi Kashi Vidyapith in 1995; founded during the non-cooperation movement and inaugurated by Mahatma Gandhi. First VC was Dr. Bhagwan Das. Declared a State University in 1974 (earlier deemed university status).",
+  "researchNotes": "NAAC grade could not be verified from the official site (the site shows a NAAC logo but no grade readable on the pages verified). An aggregator/site (Wikipedia) lists 'B++', but per source rules that is not from a permitted official/regulatory source, so naacGrade is left null. Fees and placements were not published on official pages verified in this research."
+}

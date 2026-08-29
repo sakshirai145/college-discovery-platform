@@ -1,0 +1,88 @@
+{
+  "slug": "arya-mahila-post-graduate-college",
+  "officialName": "Arya Mahila Post Graduate College",
+  "aliases": ["Arya Mahila P.G. College", "AMPG College", "Arya Mahila PG College Varanasi"],
+  "city": "Varanasi",
+  "institutionType": "WomenCollege",
+  "website": "https://www.ampgc.ac.in/",
+  "websiteVerified": true,
+  "foundedYear": 1956,
+  "foundedSourceUrl": "https://www.ampgc.ac.in/",
+  "about": "Arya Mahila Post Graduate College was founded in 1956 and is managed by Shri Arya Mahila Hitakarini Mahaparishad, established by the efforts of Smt. Vidya Devi Ji, a disciple of Shri Gyananand Maharaj Ji. Situated in the heart of Kashi at Chetganj, the college has been admitted to the privileges of Banaras Hindu University since its inception and is an all-women college. According to its official website, NAAC conferred 'A' grade to the college in the academic session 2012-2013. Admission is obtained through the UET and PET entrance examinations conducted by Banaras Hindu University.",
+  "accreditation": {
+    "naacGrade": "A",
+    "nba": false,
+    "other": "NAAC 'A' grade (conferred in academic session 2012-2013); affiliated to Banaras Hindu University",
+    "sourceUrl": "https://www.ampgc.ac.in/"
+  },
+  "courses": [
+    {
+      "name": "B.A. 1st Year",
+      "duration": "1 year (3-year programme)",
+      "fee": 10800,
+      "feeBasis": "Annual",
+      "feeSourceUrl": "https://www.ampgc.ac.in/webpage/9d316057-9fcd-452b-ab77-1efc8bc90c1d",
+      "isVerified": true,
+      "note": "Regular Seat Fees Rs. 10,800 per year plus Practical/Lab fee Rs. 800, per official Fee Structure page."
+    },
+    {
+      "name": "B.Com. 1st Year",
+      "duration": "1 year (3-year programme)",
+      "fee": 22000,
+      "feeBasis": "Annual",
+      "feeSourceUrl": "https://www.ampgc.ac.in/webpage/9d316057-9fcd-452b-ab77-1efc8bc90c1d",
+      "isVerified": true,
+      "note": "Regular Seat Fees Rs. 22,000 per year, per official Fee Structure page."
+    },
+    {
+      "name": "B.Ed. 1st Year",
+      "duration": "1 year (2-year programme)",
+      "fee": 17900,
+      "feeBasis": "Annual",
+      "feeSourceUrl": "https://www.ampgc.ac.in/webpage/9d316057-9fcd-452b-ab77-1efc8bc90c1d",
+      "isVerified": true,
+      "note": "Regular Seat Fees Rs. 17,900 per year plus Practical/Lab fee Rs. 800, per official Fee Structure page."
+    },
+    {
+      "name": "M.A. 1st Year",
+      "duration": "1 year (2-year programme)",
+      "fee": 12800,
+      "feeBasis": "Annual",
+      "feeSourceUrl": "https://www.ampgc.ac.in/webpage/9d316057-9fcd-452b-ab77-1efc8bc90c1d",
+      "isVerified": true,
+      "note": "Regular Seat Fees Rs. 12,800 per year plus Practical/Lab fee Rs. 800, per official Fee Structure page."
+    },
+    {
+      "name": "M.Com. 1st Year",
+      "duration": "1 year (2-year programme)",
+      "fee": 25000,
+      "feeBasis": "Annual",
+      "feeSourceUrl": "https://www.ampgc.ac.in/webpage/9d316057-9fcd-452b-ab77-1efc8bc90c1d",
+      "isVerified": true,
+      "note": "Regular Seat Fees Rs. 25,000 per year, per official Fee Structure page."
+    },
+    {
+      "name": "ITEP (Integrated Teacher Education Programme)",
+      "duration": "4 years",
+      "fee": 50000,
+      "feeBasis": "Annual",
+      "feeSourceUrl": "https://www.ampgc.ac.in/webpage/9d316057-9fcd-452b-ab77-1efc8bc90c1d",
+      "isVerified": true,
+      "note": "Rs. 50,000 per year for each of the 4 years, per official Fee Structure page."
+    },
+    {
+      "name": "UGDCA",
+      "duration": "1 year",
+      "fee": 3200,
+      "feeBasis": "Annual",
+      "feeSourceUrl": "https://www.ampgc.ac.in/webpage/9d316057-9fcd-452b-ab77-1efc8bc90c1d",
+      "isVerified": true,
+      "note": "UGDCA course fee Rs. 3,200 for regular students (Rs. 1,500 for SC/ST), per official Fee Structure page."
+    }
+  ],
+  "placements": [],
+  "rating": null,
+  "ratingSource": null,
+  "identityNotes": "All-women college managed by Shri Arya Mahila Hitakarini Mahaparishad; situated at Chetganj, Varanasi and admitted to the privileges of Banaras Hindu University since inception. NAAC 'A' grade conferred in 2012-2013.",
+  "researchNotes": "Fees recorded on the official Fee Structure page (annual/basis per year, published clearly as year-wise figures on the college website). Placements were not published on the official pages verified, so placements is empty. NAAC 'A' grade taken from the college's official About page (conferred 2012-13)."
+}

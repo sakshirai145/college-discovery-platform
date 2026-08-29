@@ -1,0 +1,106 @@
+{
+  "slug": "kashi-institute-of-technology",
+  "officialName": "Kashi Institute of Technology",
+  "aliases": ["KIT Varanasi", "Kashi IT", "KIT"],
+  "city": "Varanasi",
+  "institutionType": "PrivateEngineeringCollege",
+  "website": "https://www.kashiit.ac.in/",
+  "websiteVerified": true,
+  "foundedYear": 2008,
+  "foundedSourceUrl": "https://www.kashiit.ac.in/",
+  "about": "Kashi Institute of Technology (KIT), established in 2008 under the aegis of the Jain Education Society, is a private technical institution in Varanasi, Uttar Pradesh. According to its official website, KIT is approved by the All India Council for Technical Education (AICTE) and affiliated with Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow, and is NAAC 'A' grade accredited and autonomous. It is part of the Kashi Group of Institutions. The institute offers undergraduate engineering programmes (B.Tech) plus MBA, MCA, BCA, BBA and diploma/polytechnic programmes.",
+  "accreditation": {
+    "naacGrade": "A",
+    "nba": false,
+    "other": "NAAC 'A' grade; AICTE approved; affiliated to Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow; autonomous",
+    "sourceUrl": "https://www.kashiit.ac.in/"
+  },
+  "courses": [
+    {
+      "name": "B.Tech. Computer Science & Engineering",
+      "duration": "4 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Listed among Undergraduate B.Tech courses (AKTU affiliate code 428) per official courses page."
+    },
+    {
+      "name": "B.Tech. CSE (Artificial Intelligence & Machine Learning)",
+      "duration": "4 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Listed as B.Tech CSE-AI&ML per official courses page."
+    },
+    {
+      "name": "B.Tech. Electronics & Communication Engineering",
+      "duration": "4 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Listed per official courses page."
+    },
+    {
+      "name": "B.Tech. Electrical & Electronics Engineering",
+      "duration": "4 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Listed per official courses page."
+    },
+    {
+      "name": "B.Tech. Mechanical Engineering",
+      "duration": "4 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Listed per official courses page."
+    },
+    {
+      "name": "B.Tech. Civil Engineering",
+      "duration": "4 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Listed per official courses page."
+    },
+    {
+      "name": "B.Tech. Biotechnology",
+      "duration": "4 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Listed per official courses page."
+    },
+    {
+      "name": "MBA (Master of Business Administration)",
+      "duration": "2 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Postgraduate course per official courses page."
+    },
+    {
+      "name": "MCA (Master of Computer Applications)",
+      "duration": "3 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Postgraduate course per official courses page."
+    }
+  ],
+  "placements": [],
+  "rating": null,
+  "ratingSource": null,
+  "identityNotes": "Part of Kashi Group of Institutions (KGI) set up in 2008 by the Jain Education Society; located on the Varanasi-Prayagraj Highway (NH 19) at Mirzamurad. Also runs BBA, BCA and Polytechnic programmes, plus pharmacy (KIP) and management (KIMS) institutes within the group.",
+  "researchNotes": "The official admission page states 'Highest Package: 18 LPA' but no complete verified placement report (average/median/percent with a specific batch) could be confirmed from a permitted official source, so placements was left empty rather than pad with unverified figures. Fees are shown 'per year' on the official UP submission page but specific numeric fees were not extractable in this research, so fee is 'Not published'. NAAC 'A' grade, AICTE approval and AKTU affiliation taken from official site claims. Course list is limited to the actual programmes on the official courses page (no generic engineering default was assumed)."
+}

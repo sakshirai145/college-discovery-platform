@@ -1,0 +1,52 @@
+{
+  "slug": "banaras-hindu-university",
+  "officialName": "Banaras Hindu University",
+  "aliases": ["BHU", "Kashi Hindu Vishwavidyalaya"],
+  "city": "Varanasi",
+  "institutionType": "CentralUniversity",
+  "website": "https://www.bhu.ac.in/",
+  "websiteVerified": true,
+  "foundedYear": 1916,
+  "foundedSourceUrl": "https://www.bhu.ac.in/",
+  "about": "Banaras Hindu University is an internationally reputed temple of learning situated in the holy city of Varanasi, founded by nationalist leader Pandit Madan Mohan Malaviya in 1916 through close cooperation with personalities including Dr. Annie Besant. It was established by the Parliamentary legislation B.H.U. Act 1915 and is described by the university as a Central University established by an Act of Parliament (Notification No. 225 of 1916). The university comprises 5 institutes, 16 faculties and 135 departments according to its official website. Admissions are conducted centrally through the Common University Entrance Test (CUET-UG and CUET-PG) plus other entry tests, as documented on its official admission portal.",
+  "accreditation": {
+    "naacGrade": null,
+    "nba": false,
+    "other": "NIRF 2025: Rank 6 in University category and Rank 10 in Overall category",
+    "sourceUrl": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html"
+  },
+  "courses": [
+    {
+      "name": "Undergraduate programmes (CUET-UG)",
+      "duration": "3-5 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "BHU conducts UG admission via the Combined Allotment Program (CAP-UG) 2026-27 through CUET-UG, as listed on the official admission portal; fee not individually published on a page verified in this research."
+    },
+    {
+      "name": "Postgraduate programmes (CUET-PG)",
+      "duration": "2 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "PG admission via Combined Allotment Program (CAP-PG) 2026-27 through CUET-PG per the official admission portal and PG Bulletin 2026."
+    },
+    {
+      "name": "MBA / MBA (IB)",
+      "duration": "2 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Admission based on CAT 2025, minimum 50% marks in qualifying exam (45% for SC/ST), per official MBA admission portal."
+    }
+  ],
+  "placements": [],
+  "rating": null,
+  "ratingSource": null,
+  "identityNotes": "Founded by Madan Mohan Malaviya in 1916; established under the B.H.U. Act 1915. Also hosts the Institute of Medical Sciences (IMS BHU) and IIT (BHU), both of which are separately ranked/run but share the campus.",
+  "researchNotes": "BHU's official website is Angular/JavaScript-driven, so individual course fee and placement pages could not be reliably fetched as text in this research. No official placement report with average/highest package figures could be verified from a permitted source, so placements is empty. Fees for specific programmes were not published on any page verified here; course list reflects only programmes documented on the official admission portal. NIRF 2025 ranks (University 6, Overall 10) verified from nirfindia.org."
+}

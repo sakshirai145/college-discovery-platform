@@ -1,0 +1,61 @@
+{
+  "slug": "sampurnanand-sanskrit-vishwavidyalaya",
+  "officialName": "Sampurnanand Sanskrit Vishwavidyalaya",
+  "aliases": ["Sampurnanand Sanskrit University", "SSVV", "Varanaseya Sanskrit Vishwavidyalaya"],
+  "city": "Varanasi",
+  "institutionType": "SanskritUniversity",
+  "website": "https://www.ssvv.ac.in/",
+  "websiteVerified": true,
+  "foundedYear": 1958,
+  "foundedSourceUrl": "https://www.ssvv.ac.in/brief-history",
+  "about": "Sampurnanand Sanskrit Vishwavidyalaya is a Sanskrit university founded in Varanasi on 22 March 1958 (as Varanaseya Sanskrit Vishwavidyalaya) and renamed Sampurnanand Sanskrit University under the U.P. State University Act, 1973. According to its official brief history, the institution traces roots to the Government Sanskrit College established in 1791. The university's official website states it is Accredited 'A' Grade by NAAC and offers traditional Sanskrit degree and research programmes across faculties of Veda-Vedanga, Sahitya Sanskriti, Darshan, Sramana Vidya, and Adhunika Gyan Vijyana. The university is also designated an Institution of Special Importance.",
+  "accreditation": {
+    "naacGrade": "A",
+    "nba": false,
+    "other": "Recognized as an Institution of Special Importance",
+    "sourceUrl": "https://www.ssvv.ac.in/"
+  },
+  "courses": [
+    {
+      "name": "Shastri (Bachelor - UG)",
+      "duration": "3 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Shastri programmes (e.g. Rigveda, Yajurveda, Vyakarana, Jyotisha, Dharmashastra, Sahitya, Darshan, etc.) per official 'Programs offered' page. Fee not extracted from official fee PDF in this research."
+    },
+    {
+      "name": "Acharya (Master - PG)",
+      "duration": "2 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Acharya (postgraduate) programmes in the same Sanskrit subjects per official 'Programs offered' page. Fee not extracted in this research."
+    },
+    {
+      "name": "Vidyavaridhi (Ph.D.)",
+      "duration": "Variable",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Doctoral (research) programmes per official 'Programs offered' page."
+    },
+    {
+      "name": "Vidyavachaspati (D.Litt.)",
+      "duration": "Variable",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Highest-level research programme per official 'Programs offered' page."
+    }
+  ],
+  "placements": [],
+  "rating": null,
+  "ratingSource": null,
+  "identityNotes": "Founded 1958 by Chief Minister Dr. Sampurnanand; renamed Sampurnanand Sanskrit University in 1974. Its predecessor, the Government Sanskrit College, was established in 1791 by Jonathan Duncan. Campus admissions run through the university's Samarth-based portal, separate from affiliated college admissions.",
+  "researchNotes": "The official Fee Structure page links fee PDFs (e.g. new_fee_structure_23_24.pdf) but no numeric fees could be extracted into this research from those PDFs, so fee is 'Not published'. Placements not published by this classical-language university. NAAC 'A' grade and Institution of Special Importance status taken from the official website header/footer claims."
+}

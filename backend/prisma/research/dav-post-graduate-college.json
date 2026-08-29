@@ -1,0 +1,92 @@
+{
+  "slug": "dav-post-graduate-college",
+  "officialName": "D.A.V. Post Graduate College",
+  "aliases": ["DAV PG College Varanasi", "DAV Post Graduate College, Varanasi"],
+  "city": "Varanasi",
+  "institutionType": "DegreeCollege",
+  "website": "https://davpgcvns.ac.in/",
+  "websiteVerified": true,
+  "foundedYear": 1938,
+  "foundedSourceUrl": "https://davpgcvns.ac.in/history/",
+  "about": "D.A.V. Post Graduate College was established in 1938 by its mother institution, Arya Vidya Sabha, Kashi, as an Intermediate college recognised by Banaras Hindu University, obtaining degree status in 1947 and permanent affiliation in 1954. According to the official history, it commenced undergraduate courses in the faculties of Arts, Social Sciences and Commerce, with Ph.D. and Post Graduate courses added from 2008. It is admitted to the privileges of Banaras Hindu University and is NAAC accredited. The college runs regular undergraduate and postgraduate programmes in Arts, Social Sciences and Commerce plus a range of diploma and add-on courses.",
+  "accreditation": {
+    "naacGrade": null,
+    "nba": false,
+    "other": "NAAC accredited; affiliated to Banaras Hindu University",
+    "sourceUrl": "https://davpgcvns.ac.in/"
+  },
+  "courses": [
+    {
+      "name": "B.Com. (Faculty of Commerce)",
+      "duration": "3 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Listed as a regular academic course on the official 'Academic Curriculum' page."
+    },
+    {
+      "name": "B.A. (Faculty of Arts)",
+      "duration": "3 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Undergraduate course in Arts per the official Academic Curriculum page."
+    },
+    {
+      "name": "B.A. (Faculty of Social Sciences)",
+      "duration": "3 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Undergraduate course in Social Sciences per the official Academic Curriculum page."
+    },
+    {
+      "name": "M.Com.",
+      "duration": "2 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Postgraduate course per the official Academic Curriculum page."
+    },
+    {
+      "name": "M.A. (Arts): English, Hindi, AIHC & Archaeology, Philosophy, Sanskrit",
+      "duration": "2 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Postgraduate programmes per the official Academic Curriculum page."
+    },
+    {
+      "name": "M.A. (Social Sciences): Economics, History, Psychology, Sociology, Political Science",
+      "duration": "2 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Postgraduate programmes per the official Academic Curriculum page."
+    }
+  ],
+  "placements": [
+    {
+      "batch": 2022,
+      "averagePackage": null,
+      "highestPackage": 4.25,
+      "lowestPackage": 2.5,
+      "medianPackage": null,
+      "placementPercent": null,
+      "isVerified": true,
+      "sourceName": "Official Annual Report 2022-23",
+      "sourceUrl": "https://davpgcvns.ac.in/wp-content/uploads/2024/08/Annual-Report-2022-23.pdf",
+      "note": "Annual Report 2022-23 reports placed PG students (32 registered, 12 placed, 17 note) with salary range Rs. 2.5 to 4.25 LPA in Corporate & Government Sector; a full placement percentage and average were not published."
+    }
+  ],
+  "rating": null,
+  "ratingSource": null,
+  "identityNotes": "Established by Arya Vidya Sabha, Kashi, with founding disciples of Madan Mohan Malaviya (Pt. Ram Narayan Mishra and Shri Gauri Shankar Prasad). Admitted to the privileges of Banaras Hindu University.",
+  "researchNotes": "NAAC 'A+' grade (2023) appears on Wikipedia but could not be verified from a permitted official page in this research (the college site shows a NAAC logo without a readable grade), so naacGrade is null. Fees were not published on the official pages verified. Placement data only reflects figures stated in the official Annual Report 2022-23."
+}

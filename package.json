@@ -1,26 +1,27 @@
 {
-  "name": "task",
+  "name": "college-discovery",
   "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "shared"
+  ],
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
-  "dependencies": {
-    "next": "16.3.3",
-    "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "dev": "concurrently -n backend,frontend -c blue,green \"npm run dev -w @collegehub/backend\" \"npm run dev -w @collegehub/frontend\"",
+    "dev:backend": "npm run dev -w @collegehub/backend",
+    "dev:frontend": "npm run dev -w @collegehub/frontend",
+    "build": "npm run build -w @collegehub/backend && npm run build -w @collegehub/frontend",
+    "build:backend": "npm run build -w @collegehub/backend",
+    "build:frontend": "npm run build -w @collegehub/frontend",
+    "lint": "npm run lint -w @collegehub/backend && npm run lint -w @collegehub/frontend",
+    "db:generate": "npm run db:generate -w @collegehub/backend",
+    "db:migrate": "npm run db:migrate -w @collegehub/backend",
+    "db:migrate:status": "npm run db:migrate:status -w @collegehub/backend",
+    "db:seed": "npm run db:seed -w @collegehub/backend",
+    "db:studio": "npm run db:studio -w @collegehub/backend"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.3.3",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "concurrently": "^9.1.0"
   }
 }

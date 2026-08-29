@@ -1,0 +1,79 @@
+{
+  "slug": "udai-pratap-autonomous-college",
+  "officialName": "Udai Pratap Autonomous College",
+  "aliases": ["Udai Pratap College", "UP College", "UPC"],
+  "city": "Varanasi",
+  "institutionType": "AutonomousCollege",
+  "website": "https://www.upcollege.ac.in/",
+  "websiteVerified": true,
+  "foundedYear": 1909,
+  "foundedSourceUrl": "https://upcollege.ac.in/about/history",
+  "about": "Udai Pratap Autonomous College is located in the north-western part of Varanasi on a campus spanning approximately 100 acres. According to its official history, it began as the Hewett Kshatriya High School founded by Late Rajarshi Udai Pratap Singh Ju Deo in 1909, was raised to an Intermediate College in 1921 and became a degree college in 1949 when it commenced undergraduate classes in Arts and Commerce. The College was the first in Uttar Pradesh to be conferred autonomy by UGC in July 1991. It is NAAC accredited with a CGPA of 3.16 at 'A' grade, with autonomy extended up to 2032-33 by UGC. The B.Sc.(Hons.) Agriculture programme is accredited by ICAR's NAEAB.",
+  "accreditation": {
+    "naacGrade": "A",
+    "nba": false,
+    "other": "NAAC 'A' grade, CGPA 3.16 (valid to May 08, 2029); B.Sc.(Hons.) Ag accredited by NAEAB/ICAR; autonomous status extended to 2032-33; DBT Star College; UGC CPE; DST-FIST; ISO 9001/14001/50001",
+    "sourceUrl": "https://upcollege.ac.in/about/history"
+  },
+  "courses": [
+    {
+      "name": "B.A. (Faculty of Arts)",
+      "duration": "3 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Subjects include Hindi, English, Sanskrit, Economics, Sociology, History, Ancient History, Political Science, Geography, Psychology, Defence & Strategic Studies, Mathematics, Statistics per official UG course page."
+    },
+    {
+      "name": "B.Sc. (Faculty of Sciences)",
+      "duration": "3 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Subjects include Physics, Mathematics, Statistics, Chemistry, Botany, Zoology, Psychology, Defence & Strategic Studies per official UG course page."
+    },
+    {
+      "name": "B.Com.",
+      "duration": "3 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "B.Com. and B.Com. Retail Operations Management per official UG course page."
+    },
+    {
+      "name": "B.Sc. (Hons.) Agriculture",
+      "duration": "4 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "B.Sc. (Hons.) Agriculture as per the Vth Dean committee, accredited by ICAR/NAEAB per official History and UG course pages."
+    },
+    {
+      "name": "B.Ed.",
+      "duration": "2 years",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "B.Ed. (Faculty of Education) per official UG course page."
+    },
+    {
+      "name": "B.Lib. & I.Sc.",
+      "duration": "1 year",
+      "fee": null,
+      "feeBasis": "Not published",
+      "feeSourceUrl": null,
+      "isVerified": true,
+      "note": "Bachelor of Library & Information Science per official UG course page."
+    }
+  ],
+  "placements": [],
+  "rating": null,
+  "ratingSource": null,
+  "identityNotes": "Founded by Rajarshi Udai Pratap Singh Ju Deo (Raja of Bhinaga). First college in U.P. to receive autonomy (1991). Offers PG programmes (M.A., M.Sc., M.Com., M.Sc. Agriculture) since 1970 and a range of diploma courses, per official history.",
+  "researchNotes": "Fees and placements were not published in numeric form on the official pages verified (the college has a Placement Cell PDF but no verifiable package figures were extracted). This research did not use aggregator-reported figures (e.g., a widely cited '3.5 LPA median' given by CollegeDunia). Course list reflects only programmes documented on the official UG course and History pages."
+}
