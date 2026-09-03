@@ -35,7 +35,7 @@ export async function fetchColleges(params: ListCollegesParams): Promise<College
   const queryString = searchParams.toString();
   const url = apiUrl(`/colleges${queryString ? `?${queryString}` : ""}`);
 
-  const response = await fetch(url, { cache: "no-store" });
+  const response = await fetch(url, { next: { revalidate: 60 } });
 
   if (!response.ok) {
     throw new Error(`Failed to fetch colleges (${response.status})`);
@@ -46,7 +46,7 @@ export async function fetchColleges(params: ListCollegesParams): Promise<College
 
 export async function fetchCollegeById(id: string): Promise<CollegeDetail | null> {
   const response = await fetch(apiUrl(`/colleges/${encodeURIComponent(id)}`), {
-    cache: "no-store",
+    next: { revalidate: 60 },
   });
 
   if (response.status === 404) {
@@ -68,7 +68,7 @@ export type CompareResult =
 export async function fetchCompareColleges(ids: string[]): Promise<CompareResult> {
   const response = await fetch(
     apiUrl(`/colleges/compare?ids=${encodeURIComponent(ids.join(","))}`),
-    { cache: "no-store" }
+    { next: { revalidate: 60 } }
   );
 
   if (!response.ok) {
