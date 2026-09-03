@@ -25,7 +25,17 @@ export default async function HomePage(props: PageProps<"/">) {
     pageSize: typeof searchParams.pageSize === "string" ? searchParams.pageSize : undefined,
   };
 
-  const { data: colleges, meta } = await fetchColleges(query);
+  let colleges: CollegeListItem[] = [];
+  let meta = { total: 0, page: 1, pageSize: 20, totalPages: 1 };
+  let fetchError = false;
+  try {
+    const result = await fetchColleges(query);
+    colleges = result.data;
+    meta = result.meta;
+  } catch (err) {
+    console.error("[HomePage] fetchColleges failed after retries:", err);
+    fetchError = true;
+  }
 
   const queryString = new URLSearchParams();
   (Object.entries(query) as [string, string | undefined][]).forEach(([key, value]) => {
@@ -55,6 +65,13 @@ export default async function HomePage(props: PageProps<"/">) {
             Browse, search and compare colleges by rating, fees and location.
           </p>
         </div>
+
+        {fetchError && (
+          <div className="mb-4 rounded-md border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
+            The server is warming up — college data is temporarily unavailable. Please{" "}
+            <a href="/" className="font-semibold underline">refresh the page</a> in a moment.
+          </div>
+        )}
 
         <SearchFilters />
 

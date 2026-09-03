@@ -26,6 +26,9 @@ function apiUrl(path: string): string {
   return `${backendBaseUrl}/api${path}`;
 }
 
+/** Retryable status codes caused by Render cold-starts (429 = rate-limited while warming up, 503 = not yet available). */
+const RETRYABLE_STATUSES = new Set([429, 503]);
+
 export async function fetchColleges(params: ListCollegesParams): Promise<CollegeListResult> {
   const searchParams = new URLSearchParams();
   (Object.entries(params) as [string, string | undefined][]).forEach(([key, value]) => {
@@ -35,13 +38,33 @@ export async function fetchColleges(params: ListCollegesParams): Promise<College
   const queryString = searchParams.toString();
   const url = apiUrl(`/colleges${queryString ? `?${queryString}` : ""}`);
 
-  const response = await fetch(url, { next: { revalidate: 60 } });
+  // Only retry on the server side (SSR / cold-start). Browser requests are
+  // not subject to Render's cold-start 429 responses.
+  const maxAttempts = typeof window === "undefined" ? 4 : 1;
+  const baseDelayMs = 1500;
 
-  if (!response.ok) {
-    throw new Error(`Failed to fetch colleges (${response.status})`);
+  let lastStatus = 0;
+  for (let attempt = 0; attempt < maxAttempts; attempt++) {
+    if (attempt > 0) {
+      // Exponential backoff: 1.5s, 3s, 6s
+      await new Promise((resolve) => setTimeout(resolve, baseDelayMs * 2 ** (attempt - 1)));
+    }
+
+    const response = await fetch(url, { next: { revalidate: 60 } });
+
+    if (response.ok) {
+      return response.json();
+    }
+
+    lastStatus = response.status;
+
+    // Only retry on cold-start transient errors; bail immediately for others.
+    if (!RETRYABLE_STATUSES.has(response.status)) {
+      throw new Error(`Failed to fetch colleges (${response.status})`);
+    }
   }
 
-  return response.json();
+  throw new Error(`Failed to fetch colleges (${lastStatus})`);
 }
 
 export async function fetchCollegeById(id: string): Promise<CollegeDetail | null> {
