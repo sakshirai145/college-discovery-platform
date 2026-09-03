@@ -22,7 +22,11 @@ function apiUrl(path: string): string {
     return `/api${path}`;
   }
 
-  const backendBaseUrl = process.env.BACKEND_URL || "http://localhost:4000";
+  const backendBaseUrl =
+    process.env.BACKEND_URL ||
+    (process.env.NODE_ENV === "production"
+      ? "https://collegehub-api.onrender.com"
+      : "http://localhost:4000");
   return `${backendBaseUrl}/api${path}`;
 }
 
