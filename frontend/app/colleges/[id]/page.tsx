@@ -7,7 +7,32 @@ import { fetchCollegeById } from "@/lib/api-client";
 
 export default async function CollegeDetailPage(props: PageProps<"/colleges/[id]">) {
   const { id } = await props.params;
-  const college = await fetchCollegeById(id);
+
+  let college: import("@collegehub/shared").CollegeDetail | null = null;
+  let fetchError = false;
+  try {
+    college = await fetchCollegeById(id);
+  } catch {
+    fetchError = true;
+  }
+
+  if (fetchError) {
+    return (
+      <div className="flex min-h-screen flex-col">
+        <Navbar />
+        <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8 sm:px-6">
+          <Link href="/" className="text-sm font-medium text-indigo-600 hover:text-indigo-700">
+            ← Back to results
+          </Link>
+          <div className="mt-6 rounded-md border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
+            The server is warming up — please{" "}
+            <a href={`/colleges/${id}`} className="font-semibold underline">refresh the page</a>{" "}
+            in a moment.
+          </div>
+        </main>
+      </div>
+    );
+  }
 
   if (!college) {
     notFound();

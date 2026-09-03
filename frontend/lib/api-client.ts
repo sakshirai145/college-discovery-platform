@@ -30,8 +30,38 @@ function apiUrl(path: string): string {
   return `${backendBaseUrl}/api${path}`;
 }
 
-/** Retryable status codes caused by Render cold-starts (429 = rate-limited while warming up, 503 = not yet available). */
+/** Retryable status codes caused by Render cold-starts (429 = warming up, 503 = not yet available). */
 const RETRYABLE_STATUSES = new Set([429, 503]);
+
+/**
+ * Retry a server-side fetch with exponential backoff on cold-start transient errors.
+ * On the browser we never retry — the /api rewrite proxies to the backend which
+ * is already warmed up by the time the page is interactive.
+ */
+async function fetchWithRetry(
+  url: string,
+  options: RequestInit & { next?: { revalidate?: number } },
+  label: string
+): Promise<Response> {
+  const maxAttempts = typeof window === "undefined" ? 4 : 1;
+  const baseDelayMs = 1500;
+  let lastStatus = 0;
+
+  for (let attempt = 0; attempt < maxAttempts; attempt++) {
+    if (attempt > 0) {
+      // Exponential backoff: 1.5s → 3s → 6s
+      await new Promise((resolve) => setTimeout(resolve, baseDelayMs * 2 ** (attempt - 1)));
+    }
+    const response = await fetch(url, options);
+    if (response.ok || !RETRYABLE_STATUSES.has(response.status)) {
+      return response;
+    }
+    lastStatus = response.status;
+  }
+
+  // Return a synthetic Response so callers can handle the status uniformly.
+  return new Response(null, { status: lastStatus, statusText: `${label} failed after retries` });
+}
 
 export async function fetchColleges(params: ListCollegesParams): Promise<CollegeListResult> {
   const searchParams = new URLSearchParams();
@@ -42,39 +72,21 @@ export async function fetchColleges(params: ListCollegesParams): Promise<College
   const queryString = searchParams.toString();
   const url = apiUrl(`/colleges${queryString ? `?${queryString}` : ""}`);
 
-  // Only retry on the server side (SSR / cold-start). Browser requests are
-  // not subject to Render's cold-start 429 responses.
-  const maxAttempts = typeof window === "undefined" ? 4 : 1;
-  const baseDelayMs = 1500;
+  const response = await fetchWithRetry(url, { next: { revalidate: 60 } }, "fetchColleges");
 
-  let lastStatus = 0;
-  for (let attempt = 0; attempt < maxAttempts; attempt++) {
-    if (attempt > 0) {
-      // Exponential backoff: 1.5s, 3s, 6s
-      await new Promise((resolve) => setTimeout(resolve, baseDelayMs * 2 ** (attempt - 1)));
-    }
-
-    const response = await fetch(url, { next: { revalidate: 60 } });
-
-    if (response.ok) {
-      return response.json();
-    }
-
-    lastStatus = response.status;
-
-    // Only retry on cold-start transient errors; bail immediately for others.
-    if (!RETRYABLE_STATUSES.has(response.status)) {
-      throw new Error(`Failed to fetch colleges (${response.status})`);
-    }
+  if (!response.ok) {
+    throw new Error(`Failed to fetch colleges (${response.status})`);
   }
 
-  throw new Error(`Failed to fetch colleges (${lastStatus})`);
+  return response.json();
 }
 
 export async function fetchCollegeById(id: string): Promise<CollegeDetail | null> {
-  const response = await fetch(apiUrl(`/colleges/${encodeURIComponent(id)}`), {
-    next: { revalidate: 60 },
-  });
+  const response = await fetchWithRetry(
+    apiUrl(`/colleges/${encodeURIComponent(id)}`),
+    { next: { revalidate: 60 } },
+    "fetchCollegeById"
+  );
 
   if (response.status === 404) {
     return null;
@@ -93,9 +105,10 @@ export type CompareResult =
   | { ok: false; status: number };
 
 export async function fetchCompareColleges(ids: string[]): Promise<CompareResult> {
-  const response = await fetch(
+  const response = await fetchWithRetry(
     apiUrl(`/colleges/compare?ids=${encodeURIComponent(ids.join(","))}`),
-    { next: { revalidate: 60 } }
+    { next: { revalidate: 60 } },
+    "fetchCompareColleges"
   );
 
   if (!response.ok) {
